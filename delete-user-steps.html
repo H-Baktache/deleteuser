@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Guide - BIBA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4E6EF7 0%, #6C63FF 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .warning-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .warning-box h3::before {
+            content: "⚠️";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .steps {
+            margin-bottom: 30px;
+        }
+
+        .step {
+            background: #f8f9fa;
+            border-left: 4px solid #4E6EF7;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 10px 10px 0;
+            position: relative;
+        }
+
+        .step-number {
+            background: #4E6EF7;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: absolute;
+            left: -17px;
+            top: 25px;
+            font-size: 1.1rem;
+        }
+
+        .step h3 {
+            color: #4E6EF7;
+            margin-bottom: 15px;
+            margin-left: 25px;
+            font-size: 1.3rem;
+        }
+
+        .step p {
+            margin-left: 25px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .step-image-container {
+            margin: 20px 0 0 25px;
+            text-align: center;
+        }
+
+        .step-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e9ecef;
+        }
+
+        .image-caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .features {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .features h3 {
+            color: #4E6EF7;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .feature-list li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer a {
+            color: #4E6EF7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .help-section {
+            background: #e3f2fd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .help-section h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+
+            .step {
+                padding: 20px;
+            }
+
+            .step h3 {
+                margin-left: 20px;
+            }
+
+            .step p {
+                margin-left: 20px;
+            }
+
+            .step-image-container {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Account Deletion Guide</h1>
+            <p>BIBA - Complete Step-by-Step Account Deletion Process</p>
+        </div>
+
+        <div class="content">
+            <div class="warning-box">
+                <h3>Important Notice</h3>
+                <p><strong>Account deletion is permanent and cannot be undone.</strong> This action will permanently remove your account and all associated data from our system, including your profile, applications, CV files, and all other user data. Please ensure you have backed up any important information before proceeding.</p>
+            </div>
+
+            <div class="steps">
+                <h2 style="color: #4E6EF7; margin-bottom: 25px; text-align: center;">Step-by-Step Account Deletion Process</h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Navigate to Profile Section</h3>
+                    <p>Open the BIBA app and navigate to your profile section. You can find this by tapping on the profile icon or navigating to the "Profile" tab in the bottom navigation menu.</p>
+                    <div class="step-image-container">
+                        <img src="screenshots/1.jpeg" alt="Step 1: Profile Navigation Screen" class="step-image">
+                        <div class="image-caption">Figure 1: Navigate to the Profile section</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Locate Delete Account Option</h3>
+                    <p>Scroll down to the bottom of your profile page. You will find a "Delete Account" button, typically colored red to indicate it's a destructive action. This button is usually located at the bottom of the profile settings.</p>
+                    <div class="step-image-container">
+                        <img src="screenshots/2.jpeg" alt="Step 2: Delete Account Button Location" class="step-image">
+                        <div class="image-caption">Figure 2: Locate the Delete Account button</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Confirmation Modal Appears</h3>
+                    <p>Tap the "Delete Account" button. A confirmation modal will appear asking you to confirm your decision. This modal serves as your final chance to cancel the deletion process before proceeding.</p>
+                    <div class="step-image-container">
+                        <img src="screenshots/3.jpeg" alt="Step 3: Confirmation Modal" class="step-image">
+                        <div class="image-caption">Figure 3: Confirmation modal with text input field</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Type Confirmation Text</h3>
+                    <p>In the confirmation modal, you will see a text input field. Type "DELETE" (in all capital letters) to confirm that you understand this action is permanent and cannot be undone. This additional confirmation step ensures you are fully aware of the consequences.</p>
+                    <div class="step-image-container">
+                        <img src="screenshots/4.jpeg" alt="Step 4: Type DELETE Confirmation" class="step-image">
+                        <div class="image-caption">Figure 4: Type "DELETE" in the confirmation field</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Account Successfully Deleted</h3>
+                    <p>Once you type "DELETE" and tap the confirm button, the system will process your account deletion. You will see a success message confirming that your account has been permanently deleted from our system.</p>
+                    <div class="step-image-container">
+                        <img src="screenshots/5.jpeg" alt="Step 5: Success Message" class="step-image">
+                        <div class="image-caption">Figure 5: Account deletion success confirmation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <h3>What Happens During Account Deletion</h3>
+                <ul class="feature-list">
+                    <li><strong>Profile Removal:</strong> Your complete profile and personal information are permanently deleted</li>
+                    <li><strong>Application Data:</strong> All your job applications and associated data are removed</li>
+                    <li><strong>Document Cleanup:</strong> Your CV files and uploaded documents are permanently deleted</li>
+                    <li><strong>Activity Clearance:</strong> All notifications, activity history, and user data are cleared</li>
+                    <li><strong>Authentication Removal:</strong> Your account is permanently removed from Supabase Auth system</li>
+                    <li><strong>Automatic Logout:</strong> You will be logged out and redirected to the login screen</li>
+                </ul>
+            </div>
+
+            <div class="help-section">
+                <h3>💡 Need Assistance?</h3>
+                <p>If you're experiencing difficulties with the account deletion process or have any questions about data privacy, please contact our support team before proceeding with account deletion. We're here to help ensure a smooth and secure process.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>BIBA</strong></p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">This guide is part of the official account deletion documentation for Google Play Store compliance</p>
+        </div>
+    </div>
+</body>
+</html> 
